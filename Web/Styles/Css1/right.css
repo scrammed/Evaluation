@@ -1,0 +1,291 @@
+body {
+	margin: 0px;
+	background-color: #FAFAFA;
+}
+.main {
+	height: 100%;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FAFAFA;
+}
+.right {
+	float: left;
+	height: 39px;
+	width: 100%;
+	background-color: #FAFAFA;
+	display: inline;
+}
+.right_dh {
+	float: left;
+	height: 39px;
+	width: 100%;
+	background-image: url('../../Images/Img1/right_bj.png');
+	background-repeat: repeat-x;
+	display: inline;
+}
+.right_dh_wz {
+	float: left;
+	height: 21px;
+	width: 435px;
+	padding-left: 15px;
+	padding-top: 15px;
+	font-size: 12px;
+	color: #000000;
+}
+.right_bg {
+	float: left;
+	height: 32px;
+	width: 777px;
+	margin-left: 15px;
+	background-image: url(../../Images/Img1/right_bg.png);
+	background-repeat: no-repeat;
+	display: inline;
+}
+.right_bg1 {
+	float: left;
+	height: 25px;
+	width: 777px;
+	margin-left: 25px;
+	background-image: url(../../../Images/Img1/right_bg1.png);
+	background-repeat: no-repeat;
+	display: inline;
+}
+.right_bg2 {
+	float: left;
+	height: auto;
+	width: 777px;
+	margin-left: 25px;
+	background-repeat: repeat-y;
+	display: inline;
+	
+	font-size: 12px;
+}
+.right_bg3 {
+	float: left;
+	height: 30px;
+	width: 777px;
+	margin-left: 25px;
+	background-repeat: no-repeat;
+	display: inline;
+	background-image: url(../../../Images/Img1/right_d.png);
+}
+.right_anqx {
+	float: left;
+	height: 23px;
+	width: 428px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+.right_lb {
+	float: left;
+	height: 20px;
+	width: 400px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 10px;
+	padding-left: 40px;
+}
+.right_lb_1 {
+	float: left;
+	height: 30px;
+	width: 300px;
+	font-size: 12px;
+	color: #000000;
+}
+.right_lb_qx {
+	float: left;
+	height: 30px;
+	width: 45px;
+	display: inline;
+}
+#right_lb_wz {
+	float: left;
+	height: 17px;
+	width: 25px;
+	font-size: 12px;
+	color: #666666;
+	padding-top: 13px;
+}
+#right_lb_fxk {
+	float: left;
+	height: 30px;
+	width: 20px;
+}
+#right_lb_fxk1 {
+	float: left;
+	height: 16px;
+	width: 18px;
+}
+.main .middle .right .right_bg .right_lb_1 .right_lb_qx #right_lb_fxk input {
+	height: 10px;
+	width: 10px;
+	margin-top: 13px;
+	float: left;
+}
+
+
+.right_anqx1 {
+	float: left;
+	height: 19px;
+	width: 38px;
+	margin-right: 8px;
+}
+
+.right_xz {
+	float: left;
+	height: 18px;
+	width: 45px;
+	font-size: 12px;
+	color: #000000;
+	padding-left: 30px;
+	padding-top: 7px;
+}
+.right_xz1 {
+	float: left;
+	height: 18px;
+	width: 53px;
+	font-size: 12px;
+	color: #000000;
+	padding-left: 22px;
+	padding-top: 7px;
+}
+.right_xz2 {
+	float: left;
+	height: 18px;
+	width: 147px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 7px;
+	text-align: center;
+}
+.right_xz3 {
+	float: left;
+	height: 18px;
+	width: 108px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 7px;
+	text-align: center;
+}
+.right_xz4 {
+	float: left;
+	height: 18px;
+	width: 88px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 7px;
+	text-align: center;
+}
+.right_xz5{
+	float: left;
+	height: 18px;
+	width: 120px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 7px;
+	text-align: center;
+}
+.right_xz6{
+	float: left;
+	height: 18px;
+	width: 84px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 7px;
+	text-align: center;
+}
+.right_xz7{
+	float: left;
+	height: 18px;
+	width: 70px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 7px;
+	text-align: center;
+}
+#right_s {
+	font-size: 12px;
+	color: #000000;
+
+}
+#right_s a{
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+
+}
+#right_s a:hover{
+	font-size: 12px;
+	color: #0066cc;
+	text-decoration: none;
+}
+
+.main .middle .right .right_bg2 .right_bg_nr .right_bgnr1 input {
+	height: 12px;
+	width: 12px;
+	float: left;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+
+
+
+.right_fy {
+	float: left;
+	height: 18px;
+	width: 270px;
+	padding-top: 10px;
+	font-size: 12px;
+	color: #000000;
+}
+.main .right .right_dh .right_dh_wz a {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}.main .right .right_dh .right_dh_wz a:hover {
+	font-size: 12px;
+	color: #0066cc;
+}
+.main .right .right_bg3 .right_fy a {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.main .right .right_bg3 .right_fy a:hover {
+	font-size: 12px;
+	color: #0066cc;
+	text-decoration: underline;
+}
+#right_hh {
+	background-image: url(../../Images/Img1/right_hh.gif);
+	background-repeat: repeat-y;
+}
+#right_ll {
+	background-image: url(../../Images/Img1/right_mm.gif);
+	background-repeat: repeat-y;
+}
+.STYLE1 {font-size: 12px}
+.STYLE1 a {font-size: 12px
+color: #000000;
+	color: #000000;
+	text-decoration: none;
+}
+.STYLE1 a:hover{ 
+color: #0066cc; 
+font-size: 12px
+}
+
+.tb_title
+{
+	color: #F79432;
+	font-size: 12px;
+	font-weight: bold;
+}
+.tb_content
+{
+	font-size: 12px;
+	color: #000000;	
+}

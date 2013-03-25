@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DB_EvaluationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="DB_EvaluationModelStoreContainer">
+          <EntitySet Name="T_Behalf" EntityType="DB_EvaluationModel.Store.T_Behalf" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_Department" EntityType="DB_EvaluationModel.Store.T_Department" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_Dictionary" EntityType="DB_EvaluationModel.Store.T_Dictionary" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_Sorce" EntityType="DB_EvaluationModel.Store.T_Sorce" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_SysUser" EntityType="DB_EvaluationModel.Store.T_SysUser" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="T_Behalf">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="BehalfLevel" Type="int" />
+          <Property Name="Telephone" Type="varchar" MaxLength="20" />
+          <Property Name="Phone" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Position" Type="varchar" MaxLength="50" />
+          <Property Name="Isthisdept" Type="bit" />
+          <Property Name="Department" Type="varchar" MaxLength="100" />
+          <Property Name="IsVoted" Type="int" />
+          <Property Name="IsDel" Type="bit" />
+        </EntityType>
+        <EntityType Name="T_Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DeptName" Type="varchar" MaxLength="100" />
+          <Property Name="TypeId" Type="int" />
+          <Property Name="IsDel" Type="bit" />
+          <Property Name="Sort" Type="int" />
+        </EntityType>
+        <EntityType Name="T_Dictionary">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayText" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Type" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Txt" Type="nvarchar(max)" />
+          <Property Name="Sort" Type="int" />
+        </EntityType>
+        <EntityType Name="T_Sorce">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DeptID" Type="int" />
+          <Property Name="FromBehalfId" Type="int" />
+          <Property Name="Sorce" Type="int" />
+        </EntityType>
+        <EntityType Name="T_SysUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="varchar" MaxLength="20" />
+          <Property Name="UserAccount" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Pwd" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Sex" Type="bit" />
+          <Property Name="IsDel" Type="bit" />
+          <Property Name="IsSuperAdmin" Type="bit" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_EvaluationModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="DB_EvaluationEntities">
+          <EntitySet Name="T_Behalf" EntityType="DB_EvaluationModel.T_Behalf" />
+          <EntitySet Name="T_Department" EntityType="DB_EvaluationModel.T_Department" />
+          <EntitySet Name="T_Dictionary" EntityType="DB_EvaluationModel.T_Dictionary" />
+          <EntitySet Name="T_Sorce" EntityType="DB_EvaluationModel.T_Sorce" />
+          <EntitySet Name="T_SysUser" EntityType="DB_EvaluationModel.T_SysUser" />
+        </EntityContainer>
+        <EntityType Name="T_Behalf">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="BehalfLevel" Type="Int32" />
+          <Property Name="Telephone" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+          <Property Name="Phone" Type="String" MaxLength="18" Unicode="false" FixedLength="true" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="Position" Type="String" />
+          <Property Name="Isthisdept" Type="Boolean" />
+          <Property Name="Department" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IsVoted" Type="Int32" />
+          <Property Name="IsDel" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="T_Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="DeptName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TypeId" Type="Int32" />
+          <Property Name="IsDel" Type="Boolean" />
+          <Property Name="Sort" Type="Int32" Nullable="true" /></EntityType>
+        <EntityType Name="T_Dictionary">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="DisplayText" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Txt" Type="String" Nullable="true" />
+          <Property Name="Sort" Type="Int32" Nullable="true" /></EntityType>
+        <EntityType Name="T_Sorce">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="DeptID" Type="Int32" />
+          <Property Name="FromBehalfId" Type="Int32" />
+          <Property Name="Sorce" Type="Int32" />
+        </EntityType>
+        <EntityType Name="T_SysUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="UserAccount" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Pwd" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Sex" Type="Boolean" />
+          <Property Name="IsDel" Type="Boolean" />
+          <Property Name="IsSuperAdmin" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="DB_EvaluationModelStoreContainer" CdmEntityContainer="DB_EvaluationEntities">
+          <EntitySetMapping Name="T_Behalf">
+            <EntityTypeMapping TypeName="IsTypeOf(DB_EvaluationModel.T_Behalf)">
+              <MappingFragment StoreEntitySet="T_Behalf">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="BehalfLevel" ColumnName="BehalfLevel" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Isthisdept" ColumnName="Isthisdept" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="IsVoted" ColumnName="IsVoted" />
+                <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_Department">
+            <EntityTypeMapping TypeName="IsTypeOf(DB_EvaluationModel.T_Department)">
+              <MappingFragment StoreEntitySet="T_Department">
+                <ScalarProperty Name="Sort" ColumnName="Sort" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_Dictionary">
+            <EntityTypeMapping TypeName="IsTypeOf(DB_EvaluationModel.T_Dictionary)">
+              <MappingFragment StoreEntitySet="T_Dictionary">
+                <ScalarProperty Name="Sort" ColumnName="Sort" />
+                <ScalarProperty Name="Txt" ColumnName="Txt" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DisplayText" ColumnName="DisplayText" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_Sorce">
+            <EntityTypeMapping TypeName="IsTypeOf(DB_EvaluationModel.T_Sorce)">
+              <MappingFragment StoreEntitySet="T_Sorce">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+                <ScalarProperty Name="FromBehalfId" ColumnName="FromBehalfId" />
+                <ScalarProperty Name="Sorce" ColumnName="Sorce" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_SysUser">
+            <EntityTypeMapping TypeName="IsTypeOf(DB_EvaluationModel.T_SysUser)">
+              <MappingFragment StoreEntitySet="T_SysUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="UserAccount" ColumnName="UserAccount" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+                <ScalarProperty Name="IsSuperAdmin" ColumnName="IsSuperAdmin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="DB_Evaluation">
+        <EntityTypeShape EntityType="DB_EvaluationModel.T_Behalf" Width="1.5" PointX="0.75" PointY="0.75" Height="2.8025520833333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EvaluationModel.T_Department" Width="1.5" PointX="2.75" PointY="0.75" Height="1.622213541666667" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EvaluationModel.T_Dictionary" Width="1.5" PointX="2.75" PointY="3.75" Height="1.7908333333333326" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EvaluationModel.T_Sorce" Width="1.5" PointX="4.75" PointY="0.75" Height="1.6222135416666672" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EvaluationModel.T_SysUser" Width="1.5" PointX="4.75" PointY="3.75" Height="2.1280729166666674" IsExpanded="true" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,137 @@
+body {
+	margin: 0px;
+	background-color: #FAFAFA;
+}
+.main {
+	height: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.top {
+	height: 62px;
+	width: 100%;
+}
+.top_logo {
+	float: left;
+	height: 62px;
+	width: 199px;
+}
+.top_logo2 {
+	float: left;
+	height: 62px;
+	width: 370px;
+	background-image: url('../image/admin_t.gif');
+}
+.top_bj {
+	float: left;
+	height: 62px;
+	width: 80%;
+	background-image: url(../image/bj.png);
+}
+.top_bj_1 {
+	float: right;
+	height: 51px;
+	width: 100%;
+	padding-top: 10px;
+    margin-left: 0px;
+}
+.top_bj_js
+{
+    height: 20px;
+    width: 100%;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: right;
+}
+.top_bj_js1 {
+	float: left;
+	height: 15px;
+	width: 65px;
+	font-size: 12px;
+	color: #FF0000;
+	padding-top: 2px;
+}
+.top_bj_js2 {
+	float: left;
+	height: 17px;
+	width: 66px;
+	font-size: 12px;
+	color: #FF0000;
+}
+#z {
+	font-size: 12px;
+	color: #0068B7;
+}
+
+
+.middle {
+	float: left;
+	height: 521px;
+	width: 100%;
+}
+.main .middle .right .right_dh .right_dh_wz a{
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.main .middle .right .right_dh .right_dh_wz a:hover{
+	font-size: 12px;
+	color: #0066cc;
+}
+.main .middle .left .left_bj .left_jbxx #jbxx_1 a{
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.main .middle .left .left_bj .left_jbxx #jbxx_1 a:hover {
+	font-size: 13px;
+	font-weight: bold;
+	color: #0066cc;
+	text-decoration: none;
+}
+.main .middle .left .left_bj .left_sygg .left_sygg_1 .left_sygg_bt a {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+}
+.main .middle .left .left_bj .left_sygg .left_sygg_1 .left_sygg_bt a:hover {
+	font-size: 13px;
+	color: #0066cc;
+}
+.main .middle .left .left_bj .left_sygg .left_s .left_hhgg .left_hhgg_1 a {
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+.main .middle .left .left_bj .left_sygg .left_s .left_hhgg .left_hhgg_1 a:hover {
+	font-size: 12px;
+	color: #0066cc;
+	text-decoration: underline;
+}
+.main .middle .right .right_bg3 .right_fy a{
+	font-size: 12px;
+	color: #000000;
+}
+.main .middle .right .right_bg3 .right_fy a:hover {
+	font-size: 12px;
+	color:#0066cc;
+}
+.main .top .top_bj .top_bj_1 .top_bj_js #z a {
+	color: #0068B7;
+	text-decoration: none;
+}
+.main .top .top_bj .top_bj_1 .top_bj_js #z a:hover {
+	color: #000000;
+}
+
+.main .top .top_bj .top_bj_1 .top_bj_js a {
+	color: #000000;
+	text-decoration: none;
+}
+.main .top .top_bj .top_bj_1 .top_bj_js a:hover {
+	color: #0068B7;
+	text-decoration: none;
+}
